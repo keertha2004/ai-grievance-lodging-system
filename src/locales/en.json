@@ -1,0 +1,107 @@
+{
+  "app": {
+    "name": "Grievance Redressal System",
+    "tagline": "Voice your concerns, track progress, see results"
+  },
+  "nav": {
+    "home": "Home",
+    "lodge": "Lodge Complaint",
+    "track": "Track Complaint",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout"
+  },
+  "home": {
+    "welcome": "Welcome to the Grievance Redressal System",
+    "description": "A platform for citizens to lodge and track complaints across government departments",
+    "lodge_button": "Lodge a Complaint",
+    "track_button": "Track your Complaint",
+    "stats_complaints": "Complaints Resolved",
+    "stats_departments": "Departments",
+    "stats_satisfaction": "Satisfaction Rate",
+    "how_it_works": "How It Works",
+    "step1": "Create an account or lodge anonymously",
+    "step2": "Submit your grievance with details",
+    "step3": "Get real-time updates on resolution",
+    "step4": "Provide feedback on resolution"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "login": "Login",
+    "register": "Register",
+    "forgot_password": "Forgot Password?",
+    "no_account": "Don't have an account?",
+    "have_account": "Already have an account?",
+    "signup_now": "Sign up now",
+    "signin_now": "Sign in now"
+  },
+  "lodge": {
+    "title": "Lodge a Complaint",
+    "subtitle": "Provide details about your grievance",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "department": "Department (Optional)",
+      "subject": "Subject",
+      "description": "Description",
+      "attachments": "Attachments (Optional)",
+      "location": "Location",
+      "anonymous": "Submit Anonymously",
+      "submit": "Submit Complaint",
+      "reset": "Reset Form"
+    },
+    "success": "Complaint submitted successfully! Your complaint ID is:",
+    "error": "There was an error submitting your complaint. Please try again."
+  },
+  "track": {
+    "title": "Track your Complaint",
+    "subtitle": "Enter your complaint ID to check status",
+    "input_placeholder": "Enter Complaint ID (e.g., CMP123456)",
+    "button": "Track Complaint",
+    "status": {
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "resolved": "Resolved",
+      "rejected": "Rejected"
+    },
+    "details": {
+      "id": "Complaint ID",
+      "status": "Status",
+      "department": "Assigned Department",
+      "submitted": "Submitted On",
+      "updated": "Last Updated",
+      "expected": "Expected Resolution"
+    },
+    "no_results": "No complaint found with this ID. Please check and try again."
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "complaints": "Complaints Management",
+    "analytics": "Analytics",
+    "departments": "Departments",
+    "users": "Users Management",
+    "settings": "System Settings"
+  },
+  "chatbot": {
+    "title": "AI Assistant",
+    "placeholder": "Ask me anything...",
+    "greeting": "Hi! How can I help you today?",
+    "suggestions": [
+      "How do I lodge a complaint?",
+      "How can I track my complaint?",
+      "What information is required for a complaint?"
+    ]
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us"
+  }
+}

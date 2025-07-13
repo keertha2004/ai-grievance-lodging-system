@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body { font-family: sans-serif; padding: 30px; background: #f2f2f2; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; background: white; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background: #3498db; color: white; }
+        select, button { padding: 5px 10px; }
+        .flash { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Welcome, Admin!</h2>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <p class="flash">{{ messages[0] }}</p>
+        {% endif %}
+    {% endwith %}
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Complaint</th>
+            <th>Status</th>
+            <th>Time</th>
+            <th>Actions</th>
+        </tr>
+        {% for c in complaints %}
+        <tr>
+            <td>{{ c[0] }}</td>
+            <td>{{ c[1] }}</td>
+            <td>{{ c[2] }}</td>
+            <td>{{ c[3] }}</td>
+            <td>{{ c[4] }}</td>
+            <td>
+                <form method="POST" action="/update-status/{{ c[0] }}">
+                    <select name="status">
+                        <option {% if c[3]=='Pending' %}selected{% endif %}>Pending</option>
+                        <option {% if c[3]=='In Progress' %}selected{% endif %}>In Progress</option>
+                        <option {% if c[3]=='Resolved' %}selected{% endif %}>Resolved</option>
+                    </select>
+                    <button type="submit">Update</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

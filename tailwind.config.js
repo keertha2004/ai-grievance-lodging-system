@@ -1,0 +1,87 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#e6f1ff',
+          100: '#cce3ff',
+          200: '#99c7ff',
+          300: '#66aaff',
+          400: '#338eff',
+          500: '#0072ff',
+          600: '#005bcc',
+          700: '#004499',
+          800: '#002d66',
+          900: '#001733',
+        },
+        accent: {
+          50: '#e6f7f2',
+          100: '#cdf0e5',
+          200: '#9ae1cb',
+          300: '#68d2b2',
+          400: '#35c398',
+          500: '#10b981',
+          600: '#0d9467',
+          700: '#096f4d',
+          800: '#064a33',
+          900: '#03251a',
+        },
+        warning: {
+          50: '#fef9e7',
+          100: '#fef3cf',
+          200: '#fde79f',
+          300: '#fcdc6f',
+          400: '#fbd03f',
+          500: '#fbbf24',
+          600: '#c9991d',
+          700: '#977216',
+          800: '#644c0e',
+          900: '#322607',
+        },
+        error: {
+          50: '#fde9e9',
+          100: '#fbd3d3',
+          200: '#f7a7a7',
+          300: '#f37b7b',
+          400: '#ef4f4f',
+          500: '#ef4444',
+          600: '#bf3636',
+          700: '#8f2929',
+          800: '#5f1b1b',
+          900: '#300e0e',
+        },
+      },
+      fontFamily: {
+        sans: [
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-in': 'slideIn 0.3s ease-out',
+        'pulse-slow': 'pulse 3s infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideIn: {
+          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
