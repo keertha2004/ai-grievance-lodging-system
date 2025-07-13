@@ -1,11 +1,14 @@
 from flask import Flask
-from admin_routes import admin_bp
-
+from routes.auth import auth_bp
+from routes.complaint import complaint_bp
+from routes.admin import admin_bp
 
 app = Flask(__name__)
-app.secret_key = 'supersecret'  # required for session and flash messages
+app.secret_key = 'supersecret'  # Replace with a real one in production
 
-# Register your admin blueprint
+# Register Blueprints
+app.register_blueprint(auth_bp)
+app.register_blueprint(complaint_bp)
 app.register_blueprint(admin_bp)
 
 if __name__ == '__main__':
